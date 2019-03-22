@@ -56,6 +56,14 @@ app.get('/articles/:id', function (req, res) {
     res.json(articles.findById(id));
 });
 
+//new Article
+app.post('/newarticle', function (req, res) {
+    var json = req.body;
+    // res.send(res.httpRequestStatusCode);
+    res.send('Add new Subject : ' + json.subject + ' Completed!');
+});
+
+
 
 /* สั่งให้ server ทำการรัน Web Server ด้วย port ที่เรากำหนด */
 app.listen(port, function() {
