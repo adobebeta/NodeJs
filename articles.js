@@ -1,6 +1,6 @@
 var articles = [
     {
-        "articleId": 1,
+        "id": 1,
         "category": "สังคมศาสตร์",
         "subject": "ECONOMICS FOR BUSINESS",
         "stars": "* * * * *",
@@ -8,7 +8,7 @@ var articles = [
         "grade": "A"
     },
     {
-        "articleId": 2,
+        "id": 2,
         "category": "สังคมศาสตร์",
         "subject": "ENTREPRENEURSHIP",
         "stars": "* * * *",
@@ -16,7 +16,7 @@ var articles = [
         "grade": "A"
     },
     {
-        "articleId": 3,
+        "id": 3,
         "category": "ภาษา",
         "subject": "ENGLISH FOR MARKETING",
         "stars": "* *",
@@ -25,14 +25,14 @@ var articles = [
     }
 ];
 
-exports.findAll = function() {
+/* ฟังก์ชันสำหรับหา user ทั้งหมดในระบบ ในส่วนนี้ผมจะให้ส่งค่า users ทั้งหมดกลับไปเลย */
+module.exports.findAll = function() {
     return articles;
 };
 
-exports.findById = function (articleId) {
+module.exports.findById = function (id) {
     for (var i = 0; i < articles.length; i++) {
-        if (articles[i].articleId == articleId) return articles[i];
+        if (articles[i].id == id)
+            return articles[i];
     }
 };
-
-module.exports = articles;
