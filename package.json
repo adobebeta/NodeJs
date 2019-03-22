@@ -1,0 +1,19 @@
+{
+  "name": "zoom-nodejs",
+  "version": "0.0.1",
+  "description": "zoom test Node.js with Express4 Tutorial",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "module_name": "^1.0.0"
+  },
+  "devDependencies": {
+    "jest": "^24.5.0"
+  }
+}
